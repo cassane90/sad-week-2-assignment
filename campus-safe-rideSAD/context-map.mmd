@@ -1,0 +1,14 @@
+flowchart TD
+    A["Student Management
+    Student, Student Account"]
+
+    B["Ride Management
+    Ride Request, Pickup Location, Destination"]
+
+    C["Driver & Vehicle Management
+    Driver, Vehicle"]
+
+    A -->|"Student details and ride request"| B
+    B -->|"Available ride request"| C
+    C -->|"Driver assignment and ride status"| B
+    B -->|"Ride confirmation and status"| A
