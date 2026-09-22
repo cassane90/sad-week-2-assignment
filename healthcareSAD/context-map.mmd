@@ -1,0 +1,14 @@
+flowchart TD
+    A["Patient Management
+    Patient, Appointment"]
+
+    B["Billing & Insurance Claims
+    Invoice, Payment, Insurance Claim"]
+
+    C["Lab Test Diagnostics
+    Lab Test, Lab Result"]
+
+    A -->|"Patient details and test requests"| C
+    C -->|"Test results"| A
+    A -->|"Consultation charges"| B
+    C -->|"Lab test charges"| B
